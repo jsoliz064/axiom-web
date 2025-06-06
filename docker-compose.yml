@@ -1,0 +1,15 @@
+
+services:
+  axiom-web:
+    image: node:20.19.2-slim
+    container_name: axiom-web
+    hostname: axiom-web
+    restart: unless-stopped
+    volumes:
+      - ./dist:/app/dist
+    working_dir: /app
+    command: >
+      sh -c "npm run prod"
+    ports:
+      - "${PORT}:${PORT}"
+    
