@@ -1,4 +1,4 @@
-# u24-7.app
+# AXIOM
 
 ## Project setup
 ```
