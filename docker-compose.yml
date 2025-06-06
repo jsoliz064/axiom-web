@@ -6,7 +6,7 @@ services:
     hostname: axiom-web
     restart: unless-stopped
     volumes:
-      - ./dist:/app/dist
+      - ./:/app
     working_dir: /app
     command: >
       sh -c "npm run prod"
