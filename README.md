@@ -1,5 +1,12 @@
 # AXIOM
 
+
+## Production
+```
+docker-compose run --rm axiom-web npm install
+docker-compose run --rm axiom-web npm run build
+```
+
 ## Project setup
 ```
 npm install
